@@ -5,7 +5,7 @@ of the contents, and a short description of the project in question.
 
 Java:
   - Sisu - school group project
-	> The student course service webside sisu.fi reimagined as a
+	> The student course service website sisu.fi reimagined as a
           Java based desktop app. The result of a group project of 3
           students. All of us contributed to the final product, but
           my most important responsibility was to take care of the UI,
