@@ -86,7 +86,7 @@ void list_ingredients(std::string product, std::vector<std::string> list){
 void print_instructions(){
     std::cout << std::endl;
     std::cout << "   C - compare" << std::endl;
-    std::cout << "   P - print ingredients" << std::endl;
+    std::cout << "   P - get a list of products" << std::endl;
     std::cout << "   H - help" << std::endl;
     std::cout << "   Q - quit program" << std::endl;
     std::cout << std::endl;
@@ -102,6 +102,7 @@ int main()
         std::string command = "";
         std::cout << "Type your command: ";
         std::cin >> command;
+        command = toupper(command[1]);
 
         if(command == "C"){
             std::string product1 = "";
@@ -135,6 +136,8 @@ int main()
             print_instructions();
         } else if (command == "Q"){
             break;
+        } else {
+            std::cout << "Not a valid command." << std::endl;
         }
     }
 
